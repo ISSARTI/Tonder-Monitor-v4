@@ -1,0 +1,16 @@
+# Private booking details
+booking_details.json
+booked_appointment.json
+seen_slots.json
+
+
+# Local env configs
+env.txt
+.env
+
+# Playwright / Python temp files
+__pycache__/
+*.pyc
+*.html
+*.png
+.pytest_cache/
