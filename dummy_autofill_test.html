@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+  <link rel="stylesheet" href="Danish website/reservation.frontdesksuite.com/bundle7fd6.css">
+  <title>Reservation - Contact Info & Partners (Autofill Test)</title>
+  <style>
+    /* Customize the phone label and margin to match screenshot */
+    .phone-label-container {
+      font-size: 1rem;
+      margin-bottom: 8px;
+      color: #333;
+    }
+    .phone-title {
+      font-size: 1.1rem;
+      font-weight: normal !important;
+      color: #1a1a1a;
+    }
+    .intl-tel-input, .iti {
+      width: 100% !important;
+    }
+    .iti__flag-container, .flag-container {
+      height: 48px !important;
+    }
+    /* Ensure the outline styling looks beautiful and matches MDC */
+    .form-group {
+      margin-bottom: 25px !important;
+    }
+    h5 {
+      font-weight: bold;
+      color: #333;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body class="mdc-typography">
+  <div class="mdc-drawer-app-content wrapper">
+    <!-- Header bar -->
+    <header class="mdc-top-app-bar mdc-top-app-bar">
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <img class="logo" alt="Back to start" height="40" src="Danish website/themes.frontdesksuite.com/Files/Themes/toender/logo9cc3.png" />
+          </a>
+        </section>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="mdc-top-app-bar"></div>
+      <div class="mdc-layout-grid fd-layout-grid">
+        <div class="body-layout">
+          <div class="form-container" style="max-width: 600px; margin: 0 auto; background: white; padding: 20px;">
+            <form id="autofill-test-form" onsubmit="event.preventDefault(); showSuccess();">
+              
+              <!-- Mobile Phone Field with intlTelInput -->
+              <div class="form-group">
+                <div class="phone-label-container">
+                  <span style="color: #d32f2f; font-weight: bold;">*</span> Field is mandatory<br>
+                  <label for="Phone" class="phone-title">Mobile phone number (please enter without dashes)</label>
+                </div>
+                <div class="phone-input-wrapper">
+                  <input type="tel" id="Phone" name="Phone" class="form-control" style="height: 48px; border-radius: 4px; border: 1px solid #ccc; width: 100%;">
+                </div>
+              </div>
+
+              <!-- Email Address MDC Outlined -->
+              <div class="form-group">
+                <div class="mdc-text-field mdc-text-field--outlined" style="width: 100%;">
+                  <input class="mdc-text-field__input" type="email" id="Email" name="Email" required>
+                  <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__notch">
+                      <label for="Email" class="mdc-floating-label">Email address *</label>
+                    </div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Case Number MDC Outlined -->
+              <div class="form-group">
+                <div class="mdc-text-field mdc-text-field--outlined" style="width: 100%;">
+                  <input class="mdc-text-field__input" type="text" id="Sagsnummer" name="Sagsnummer" required>
+                  <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__notch">
+                      <label for="Sagsnummer" class="mdc-floating-label">Case Number (Sagsnummer) *</label>
+                    </div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                  </div>
+                </div>
+              </div>
+
+              <h5>PART 1</h5>
+
+              <!-- P1 First Name -->
+              <div class="form-group">
+                <div class="mdc-text-field mdc-text-field--outlined" style="width: 100%;">
+                  <input class="mdc-text-field__input" type="text" id="p1_fname" name="p1_first_name" required>
+                  <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__notch">
+                      <label for="p1_fname" class="mdc-floating-label">First name *</label>
+                    </div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- P1 Last Name -->
+              <div class="form-group">
+                <div class="mdc-text-field mdc-text-field--outlined" style="width: 100%;">
+                  <input class="mdc-text-field__input" type="text" id="p1_lname" name="p1_last_name" required>
+                  <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__notch">
+                      <label for="p1_lname" class="mdc-floating-label">Last name *</label>
+                    </div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- P1 DOB -->
+              <div class="form-group">
+                <div class="mdc-text-field mdc-text-field--outlined" style="width: 100%;">
+                  <input class="mdc-text-field__input" type="text" id="p1_dob" name="p1_dob" required placeholder="DD-MM-YYYY">
+                  <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__notch">
+                      <label for="p1_dob" class="mdc-floating-label">Date of Birth *</label>
+                    </div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- P1 Address (Danish portal has typo "Adress") -->
+              <div class="form-group">
+                <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--textarea" style="width: 100%; height: auto;">
+                  <textarea class="mdc-text-field__input" id="p1_address" name="p1_address" required rows="3" style="padding: 12px;"></textarea>
+                  <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__notch">
+                      <label for="p1_address" class="mdc-floating-label">Adress *</label>
+                    </div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- P1 Email -->
+              <div class="form-group">
+                <div class="mdc-text-field mdc-text-field--outlined" style="width: 100%;">
+                  <input class="mdc-text-field__input" type="email" id="p1_email" name="p1_email" required>
+                  <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__notch">
+                      <label for="p1_email" class="mdc-floating-label">E-mail *</label>
+                    </div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                  </div>
+                </div>
+              </div>
+
+              <h5>PART 2</h5>
+
+              <!-- P2 First Name -->
+              <div class="form-group">
+                <div class="mdc-text-field mdc-text-field--outlined" style="width: 100%;">
+                  <input class="mdc-text-field__input" type="text" id="p2_fname" name="p2_first_name" required>
+                  <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__notch">
+                      <label for="p2_fname" class="mdc-floating-label">First Name *</label>
+                    </div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- P2 Last Name -->
+              <div class="form-group">
+                <div class="mdc-text-field mdc-text-field--outlined" style="width: 100%;">
+                  <input class="mdc-text-field__input" type="text" id="p2_lname" name="p2_last_name" required>
+                  <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__notch">
+                      <label for="p2_lname" class="mdc-floating-label">Last name *</label>
+                    </div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- P2 DOB -->
+              <div class="form-group">
+                <div class="mdc-text-field mdc-text-field--outlined" style="width: 100%;">
+                  <input class="mdc-text-field__input" type="text" id="p2_dob" name="p2_dob" required placeholder="DD-MM-YYYY">
+                  <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__notch">
+                      <label for="p2_dob" class="mdc-floating-label">Date of Birth *</label>
+                    </div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- P2 Address -->
+              <div class="form-group">
+                <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--textarea" style="width: 100%; height: auto;">
+                  <textarea class="mdc-text-field__input" id="p2_address" name="p2_address" required rows="3" style="padding: 12px;"></textarea>
+                  <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__notch">
+                      <label for="p2_address" class="mdc-floating-label">Adress *</label>
+                    </div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- P2 Email -->
+              <div class="form-group">
+                <div class="mdc-text-field mdc-text-field--outlined" style="width: 100%;">
+                  <input class="mdc-text-field__input" type="email" id="p2_email" name="p2_email" required>
+                  <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__notch">
+                      <label for="p2_email" class="mdc-floating-label">E-mail *</label>
+                    </div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- GDPR Consent Checkbox -->
+              <div class="card" style="margin-bottom: 20px; border: none; background: transparent;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <input type="checkbox" id="accept_terms" name="accept_terms" required style="width: 20px; height: 20px; cursor: pointer;">
+                  <label for="accept_terms" style="text-transform: none; font-size: 0.95rem; color: #555;">I accept the privacy policy / Jeg accepterer persondatapolitikken</label>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="submit-button-container" style="margin-top: 30px; text-align: right;">
+                <button type="submit" id="submit-btn" class="btn btn-confirm mdc-button mdc-button--raised button-filled" style="background-color: #0066b3; color: white; padding: 12px 30px; font-weight: bold; border-radius: 4px; border: none; cursor: pointer;">
+                  🔒 Submit Booking & Pay Fee
+                </button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput-jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Initialize the intlTelInput on the Phone field
+      $("#Phone").intlTelInput({
+        initialCountry: "dk",
+        onlyCountries: ["dk", "de"],
+        preferredCountries: ["dk"],
+        nationalMode: true,
+        autoHideDialCode: false
+      });
+
+      // MDC Outline floating label focus effects simulation
+      $(".mdc-text-field__input").on("focus", function() {
+        $(this).closest(".mdc-text-field").addClass("mdc-text-field--focused");
+      }).on("blur", function() {
+        $(this).closest(".mdc-text-field").removeClass("mdc-text-field--focused");
+        if ($(this).val()) {
+          $(this).closest(".mdc-text-field").addClass("mdc-text-field--filled");
+        } else {
+          $(this).closest(".mdc-text-field").removeClass("mdc-text-field--filled");
+        }
+      });
+    });
+
+    function showSuccess() {
+      var urlParams = new URLSearchParams(window.location.search);
+      var slot = urlParams.get('slot') || 'Friday 10 Jul 2026 at 10:00';
+      if (slot.includes('T')) {
+        var parts = slot.split('T');
+        slot = parts[0] + ' at ' + parts[1];
+      }
+      
+      // Hide form container
+      $(".form-container").hide();
+      
+      // Create and append success container
+      var successDiv = document.createElement("div");
+      successDiv.id = "test-alert";
+      successDiv.style.cssText = "text-align: center; padding: 40px; background-color: #e8f5e9; border: 2px solid #2e7d32; border-radius: 8px; max-width: 600px; margin: 40px auto; font-family: sans-serif;";
+      successDiv.innerHTML = '<h1 style="color: #2e7d32; font-size: 2rem; margin-top: 0; margin-bottom: 15px;">🎉 Booking Confirmed!</h1>' +
+                            '<p style="font-size: 1.2rem; color: #1b5e20; margin-bottom: 20px;">Your marriage appointment has been successfully simulated.</p>' +
+                            '<div style="background: white; padding: 15px; border-radius: 4px; display: inline-block; border: 1px solid #c8e6c9; margin-bottom: 20px; font-size: 1.1rem;">' +
+                            '<strong>Selected Slot:</strong> <span style="color: #2e7d32; font-weight: bold;">' + slot + '</span>' +
+                            '</div>' +
+                            '<p style="font-size: 0.9rem; color: #666;">(Local simulation confirmation page)</p>';
+      document.querySelector(".body-layout").appendChild(successDiv);
+      
+      // Trigger a native alert as well for Playwright dialog compatibility
+      setTimeout(function() {
+        alert('Form submitted successfully!');
+      }, 100);
+    }
+  </script>
+</body>
+</html>
